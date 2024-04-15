@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#title {
+  text-align: center;
+  font-size: 8vh;
+  margin-bottom: 4vh;
+}
+#img-div {
+  margin: 10vh;
+}
+
+#image {
+  max-width: 100%;
+  display: block;
+}
+
+#tribute-info {
+  margin-left: 10vh;
+  font-size: 4vh;
+}
+
+#tribute-link {
+  margin-left: 10vh;
+  font-size: 4vh;
+  padding-top: 2vh;
+  text-decoration: none;
+}
