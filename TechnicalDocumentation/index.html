@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>Java Documentation</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li>
+                <a class="nav-link" href="#Installation">Installation</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#JDBC">JDBC</a>
+            </li>
+            <li><a class="nav-link" href="#Spring">Spring</a></li>
+            <li><a class="nav-link" href="#MVC">MVC</a></li>
+            <li>
+                <a class="nav-link" href="#Spring_Boot">Spring Boot</a>
+            </li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <article>
+                <p>
+                    Java is a popular programming language, created in 1995.
+
+                    It is owned by Oracle, and more than 3 billion devices run Java.
+
+                    It is used for:
+
+                    Mobile applications (specially Android apps)
+                    Desktop applications
+                    Web applications
+                    Web servers and application servers
+                    Games
+                    Database connection
+                    And much, much more!
+                </p>
+
+                <p>
+                    Java works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc.)
+                    It is one of the most popular programming languages in the world
+                    It has a large demand in the current job market
+                    It is easy to learn and simple to use
+                    It is open-source and free
+                    It is secure, fast and powerful
+                    It has huge community support (tens of millions of developers)
+                    Java is an object oriented language which gives a clear structure to programs and allows code to be
+                    reused, lowering development costs
+                    As Java is close to C++ and C#, it makes it easy for programmers to switch to Java or vice versa
+                </p>
+                <ul>
+                    <li><code>
+                        public class Main {
+                        public static void main(String[] args) {
+                        System.out.println("Hello World");
+                        }
+                        }
+                        </code>
+                    </li>
+                    <li>
+                        Single-line comments start with two forward slashes (//).
+
+                        Any text between // and the end of the line is ignored by Java (will not be executed).
+
+                        This example uses a single-line comment before a line of code:
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="Installation">
+            <header>Installation</header>
+            <article>
+                <p> Follow The Steps : </p>
+
+                <ul>
+                    <li>
+                        Go to "System Properties" (Can be found on Control Panel > System and Security > System >
+                        Advanced System Settings)
+                    </li>
+                    <li>Click on the "Environment variables" button under the "Advanced" tab</li>
+                    <li>
+                        Then, select the "Path" variable in System variables and click on the "Edit" button
+                    </li>
+                    <li>Click on the "New" button and add the path where Java is installed, followed by \bin. By
+                        default, Java is installed in C:\Program Files\Java\jdk-11.0.1 (If nothing else was specified
+                        when you installed it). In that case, You will have to add a new path with: C:\Program
+                        Files\Java\jdk-11.0.1\bin
+                        Then, click "OK", and save the settings</li>
+                    <li>
+                        At last, open Command Prompt (cmd.exe) and type java -version to see if Java is running on your
+                        machine
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="JDBC">
+            <header>JDBC</header>
+            <article>
+                <p>
+                    JDBC stands for Java Database Connectivity. JDBC is a Java API to connect and execute the query with
+                    the database. It is a specification from Sun Microsystems that provides a standard abstraction(API
+                    or Protocol) for Java applications to communicate with various databases. It provides the language
+                    with Java database connectivity standards. It is used to write programs required to access
+                    databases. JDBC, along with the database driver, can access databases and spreadsheets. The
+                    enterprise data stored in a relational database(RDB) can be accessed with the help of JDBC APIs.
+                </p>
+
+                <p>
+                    Enterprise applications created using the JAVA EE technology need to interact with databases to
+                    store application-specific information. So, interacting with a database requires efficient database
+                    connectivity, which can be achieved by using the ODBC(Open database connectivity) driver. This
+                    driver is used with JDBC to interact or communicate with various kinds of databases such as Oracle,
+                    MS Access, Mysql, and SQL server database.
+                </p>
+                <p>
+                    Before jumping into JDBC Drivers, let us know more about API.
+
+                    API stands for Application Programming Interface. It is essentially a set of rules and protocols
+                    which transfers data between different software applications and allow different software
+                    applications to communicate with each other. Through an API one application can request information
+                    or perform a function from another application without having direct access to it’s underlying code
+                    or the application data.
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="Spring">
+            <header>Spring</header>
+            <article>
+                This spring tutorial provides in-depth concepts of Spring Framework with simplified examples. It was
+                developed by Rod Johnson in 2003. Spring framework makes the easy development of JavaEE application.
+
+                It is helpful for beginners and experienced persons.
+                <code>class Employee{  
+                    Address address;  
+                    Employee(){  
+                    address=new Address();  
+                    }  
+                    }  
+          </code>
+
+                <code>
+                package com.javatpoint;  
+  
+public class Student {  
+private String name;  
+  
+public String getName() {  
+    return name;  
+}  
+  
+public void setName(String name) {  
+    this.name = name;  
+}  
+  
+public void displayInfo(){  
+    System.out.println("Hello: "+name);  
+}  
+}  
+               </code>
+            </article>
+        </section>
+        <section class="main-section" id="MVC">
+            <header>MVC</header>
+            <p>
+                MVC is short for Model, View, and Controller. MVC is a popular way of organizing your code. The big idea
+                behind MVC is that each section of your code has a purpose, and those purposes are different. Some of
+                your code holds the data of your app, some of your code makes your app look nice, and some of your code
+                controls how your app functions.
+
+                MVC is a way to organize your code’s core functions into their own, neatly organized boxes. This makes
+                thinking about your app, revisiting your app, and sharing your app with others much easier and cleaner.
+            </p>
+            <p>
+                MVC is a way to think about how an web application works.
+
+                It’s kind of like how you make Thanksgiving dinner. You have a fridge full of food, which is like the
+                Model. The fridge (Model) contains the raw materials we will use to make dinner.
+
+                You also probably have a recipe or two. A recipe (assuming you follow it exactly) is like the Controller
+                of Thanksgiving dinner. Recipes dictate which stuff in the fridge you’ll take out, how you’ll put it
+                together, and how long you need to cook it.
+
+                Then, you have table-settings, silverware, etc., which are what your hungry friends and family use to
+                eat dinner. Table-top items are like the View. They let your guests interact with your Model and
+                Controller’s creation.
+            </p>
+            <p>
+                MVC is helpful when planning your app, because it gives you an outline of how your ideas should be
+                organized into actual code.
+
+                For instance, let’s imagine you’re creating a To-do list app. This app will let users create tasks and
+                organize them into lists.
+
+                The Model in a todo app might define what a “task” is and that a “list” is a collection of tasks.
+
+                The View code will define what the todos and lists looks like, visually. The tasks could have large
+                font, or be a certain color.
+
+                Finally, the Controller could define how a user adds a task or marks another as complete. The Controller
+                connects the View’s add button to the Model, so that when you click “add task,” the Model adds a new
+                task.
+            </p>
+            <Code>
+
+                class Student {
+                    private String rollNo;
+                    private String name;
+                 
+                    public String getRollNo() {
+                        return rollNo;
+                    }
+                 
+                    public void setRollNo(String rollNo) {
+                        this.rollNo = rollNo;
+                    }
+                 
+                    public String getName() {
+                        return name;
+                    }
+                 
+                    public void setName(String name) {
+                        this.name = name;
+                    }
+                }
+                 
+                class StudentView {
+                    public void printStudentDetails(String studentName, String studentRollNo) {
+                        System.out.println("Student:");
+                        System.out.println("Name: " + studentName);
+                        System.out.println("Roll No: " + studentRollNo);
+                    }
+                }
+                 
+                class StudentController {
+                    private Student model;
+                    private StudentView view;
+                 
+                    public StudentController(Student model, StudentView view) {
+                        this.model = model;
+                        this.view = view;
+                    }
+                 
+                    public void setStudentName(String name) {
+                        model.setName(name);
+                    }
+                 
+                    public String getStudentName() {
+                        return model.getName();
+                    }
+                 
+                    public void setStudentRollNo(String rollNo) {
+                        model.setRollNo(rollNo);
+                    }
+                 
+                    public String getStudentRollNo() {
+                        return model.getRollNo();
+                    }
+                 
+                    public void updateView() {
+                        view.printStudentDetails(model.getName(), model.getRollNo());
+                    }
+                }
+                 
+                public class MVCPattern {
+                    public static void main(String[] args) {
+                        Student model = retriveStudentFromDatabase();
+                 
+                        StudentView view = new StudentView();
+                 
+                        StudentController controller = new StudentController(model, view);
+                 
+                        controller.updateView();
+                 
+                        controller.setStudentName("Vikram Sharma");
+                 
+                        controller.updateView();
+                    }
+                 
+                    private static Student retriveStudentFromDatabase() {
+                        Student student = new Student();
+                        student.setName("Lokesh Sharma");
+                        student.setRollNo("15UCS157");
+                        return student;
+                    }
+                }</Code>
+        </section>
+        <section class="main-section" id="Spring_Boot">
+            <header>Spring Boot</header>
+            <article>
+                <p> Spring Boot Tutorial provides basic and advanced concepts of Spring Framework. Our Spring Boot
+                    Tutorial is designed for beginners and professionals both.
+
+                    Spring Boot is a Spring module that provides the RAD (Rapid Application Development) feature to the
+                    Spring framework.
+
+                    Our Spring Boot Tutorial includes all topics of Spring Boot such, as features, project, maven
+                    project, starter project wizard, Spring Initializr, CLI, applications, annotations, dependency
+                    management, properties, starters, Actuator, JPA, JDBC, etc.</p>
+
+                <ul>
+                    <li>
+                        The dependency injection approach is used in Spring Boot.
+                    </li>
+                    <li>It contains powerful database transaction management capabilities.</li>
+                    <li>
+                        It simplifies integration with other Java frameworks like JPA/Hibernate ORM, Struts, etc.
+                    </li>
+                </ul>
+                <Code>
+                    public static void main(String[] args)  
+{    
+SpringApplication.run(ClassName.class, args);    
+}  
+                </Code>
+            </article>
+        </section>
+
+    </main>
+</body>
+
+</html>
